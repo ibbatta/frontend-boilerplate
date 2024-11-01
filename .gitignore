@@ -1,0 +1,12 @@
+### react ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+
+### npm ###
+node_modules
+
+
