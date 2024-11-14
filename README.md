@@ -11,3 +11,11 @@
 ### Features
 
 - @Routing: the project is routing-ready thanks to `@tanstack/react-router`
+
+---
+
+### TODO:
+
+- [x] Routing
+- [ ] State management
+- [ ] Role-base authorizations
