@@ -1,14 +1,13 @@
+@import url("./reset.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
 body {
-  width: 100vw;
-  height: 100vh;
-}
-
-#root {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  overflow-y: hidden;
 }
