@@ -21,8 +21,14 @@ declare module "@tanstack/react-router" {
 
 createRoot(document.getElementById("app")!).render(
   <StrictMode>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense
+      fallback={
+        <div className="flex h-screen w-screen flex-col items-center justify-center gap-8 bg-slate-200">
+          Loading...
+        </div>
+      }
+    >
       <RouterProvider router={router} />
     </Suspense>
-  </StrictMode>
+  </StrictMode>,
 );
