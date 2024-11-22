@@ -1,15 +1,21 @@
+import { useCoreStore } from "../states/core.store";
+
 function HelloWorld() {
+  const { title, titles, setTitle } = useCoreStore();
+
+  const randomIndex = Math.floor(Math.random() * titles.length);
+
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center gap-8 bg-slate-300">
-      <div className="flex flex-col gap-2 justify-center items-center">
-        <h1 className="font-thin text-4xl text-slate-900">Hello World!</h1>
-        <h2 className="font-bold uppercase text-slate-600">SPA Boilerplate</h2>
+    <div className="flex h-screen w-screen flex-col items-center justify-center gap-8 bg-slate-200">
+      <div className="flex flex-col items-center justify-center gap-2">
+        <h1 className="text-4xl font-thin text-slate-900">SPA Boilerplate</h1>
+        <h2 className="font-bold uppercase text-slate-600">{title}</h2>
       </div>
       <button
-        className="block px-4 py-2 border-solid border-slate-900 border-2 rounded bg-slate-100"
-        onClick={() => alert("click")}
+        className="block rounded border border-solid border-white bg-slate-400 px-4 py-2 font-thin text-white hover:bg-slate-500 active:bg-slate-600"
+        onClick={() => setTitle(randomIndex)}
       >
-        Set welcome message
+        Change message
       </button>
     </div>
   );
