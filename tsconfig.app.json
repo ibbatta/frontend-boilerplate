@@ -7,6 +7,12 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
+    /* Path aliases */
+    "baseUrl": "./src/modules",
+    "paths": {
+      "@Core/*": ["Core/*"]
+    },
+
     /* Bundler mode */
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
@@ -22,9 +28,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"],
-  "baseUrl": ".",
-  "paths": {
-    "@/*": ["./src/*"]
-  }
+  "include": ["src"]
 }
