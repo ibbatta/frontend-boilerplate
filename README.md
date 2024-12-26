@@ -1,5 +1,5 @@
-# SPA Boilerplate 
-> Super minimal boilerplate to start simple SPA with react + typescript + tailwind (with Vite)
+# FRONTEND Boilerplate 
+> Super minimal boilerplate to start a simple SPA with react + typescript + tailwind (with Vite)
 
 ---
 
